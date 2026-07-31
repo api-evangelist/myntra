@@ -1,7 +1,25 @@
 aid: myntra
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/myntra.png
 name: Myntra
-description: 'Myntra is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Myntra is one of India''s largest fashion and lifestyle e-commerce
+  platforms, offering apparel, footwear, accessories, and beauty products across
+  its own and third-party brands. Founded in 2007 and headquartered in Bengaluru,
+  Myntra was acquired by Flipkart (Walmart) in 2014 and operates a consumer
+  marketplace at myntra.com. It was surfaced as a portfolio company of Accel and
+  added to the API Evangelist network as a stub for enrichment. Myntra does not
+  publish a public developer API program; its developer/API hosts resolve behind
+  Akamai but are not openly documented.'
 url: https://raw.githubusercontent.com/api-evangelist/myntra/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Fashion
+- E-commerce
+- Retail
+- Marketplace
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/myntra-domain-security.yml
 - type: Website
-  url: http://www.myntra.com
+  url: https://www.myntra.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
